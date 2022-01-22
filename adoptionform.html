@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>PetConnect</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="forms.css">
+    <link rel="shortcut icon" href="images/PetConnectLogo-01.png" />
+</head>
+
+<body style="background:black;">
+    <p style="color:white; display: inline-block;
+        color: white;
+        font-size: 40px; padding: 12px 36px;margin-top:2px;text-decoration: bold; margin-left: 550px;">PET ADOPTION FORM</p>
+    <div style="margin:auto;">
+        <div>
+            <img src="images/text.png" style="width: 700px;height: 600px;margin-left: 75px; float: left;">
+        </div>
+
+        <div class="signupcontainer">
+            <div class="contentbox1">
+                <form action="connect1.php" method="POST">
+                    <div class="label2">
+                        <label>Name of Adopter</label>
+                        <input id="inputbox2" type="text" name="name" class="form-control" size="50" required />
+                    </div>
+                    <div class="label2">
+                        <label>Select Pet ID</label>
+                        <select name="Pid" id="inputbox3" class="form-control">
+              <option>0999</option>
+              <option>1000</option>
+              <option>1001</option>
+              <option>1002</option>
+              <option>1003</option>
+              <option>1004</option>
+              <option>1005</option>
+              <option>1006</option> 
+            </select>
+
+                    </div>
+
+                    <div class="label2">
+                        <label>Select Pet Name</label>
+                        <select name="PName" id="inputbox4" class="form-control">
+            <option>RAMU</option>
+            <option>ZOKO</option>
+            <option>NICO</option>
+            <option>LAILA</option>
+            <option>SNOWY</option>
+            <option>PROXY</option>
+            <option>SONI</option>
+            <option>KANGANA</option> 
+          </select>
+
+                    </div>
+                    <div class="label2">
+                        <label> Select Pet Category:</label>
+                        <select name="PCat" id="inputbox5" class="form-control">
+          <option>DOG</option>
+          <option>CAT</option>
+          </select>
+                    </div>
+                    <div class="label2">
+                        <label>Mode of Adoption:</label><br />
+                        <input type="radio" id="dog1" name="mode" value="active"> <label for="dog1"> ACTIVE </label>
+                        <input type="radio" id="dog2" name="mode" value="passive"> <label for="dog2"> PASSIVE</label>
+                        <input type="radio" id="dog3" name="mode" value="foster"> <label for="dog3">FOSTER CARE </label>
+                    </div>
+
+                    <div>
+                        <button type="submit" value="register" class="signupbutton">
+            ADOPT
+          </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
