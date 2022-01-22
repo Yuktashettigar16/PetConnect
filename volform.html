@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fuggles&family=Indie+Flower&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap" rel="stylesheet">
+    <title>PetConnect</title>
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="forms.css">
+    <link rel="shortcut icon" href="images/PetConnectLogo-01.png" />
+</head>
+
+<body style="background:black;">
+    <p style="color:white; display: inline-block;
+        color: white;
+        font-size: 40px; padding: 12px 36px;margin-top:2px;text-decoration: bold; margin-left: 450px;">VOLUNTEER REGISTRATION FORM</p>
+    <div style="margin:auto;">
+        <div>
+            <img src="images/text.png" style="width: 700px;height: 600px;margin-left: 75px; float: left;">
+        </div>
+
+        <div class="signupcontainer">
+            <div class="contentbox1">
+                <form action="connect.php" method="POST">
+                    <div class="label2">
+                        <label>Name</label>
+                        <input id="inputbox2" type="text" name="name" class="form-control" size="50" required />
+                    </div>
+                    <div class="label2">
+                        <label>Phone</label>
+                        <input id="inputbox2" type="text" name="phone" class="form-control" size="50" required />
+                    </div>
+
+                    <div class="label2">
+                        <label>E-mail</label>
+                        <input id="inputbox2" type="text" name="email" class="form-control" required />
+                    </div>
+
+                    <div class="label2">
+                        <label>Age</label>
+                        <input id="inputbox2" type="text" id="age" name="age" required class="form-control" />
+                    </div>
+                    <div class="label2">
+                        <label>Address</label>
+                        <input id="inputbox2" type="text" id="add" name="address" required class="form-control" />
+                    </div>
+
+
+
+                    <div class="label2">
+                        <label>Mode of Volunteering:</label><br />
+                        <input type="radio" id="cat1" name="volunteer" value="physical"> <label for="cat1">Physical </label>
+                        <input type="radio" id="cat2" name="volunteer" value="virtual"> <label for="cat2">Virtual </label>
+                    </div>
+
+                    <div>
+                        <button type="submit" value="register" class="signupbutton">
+            JOIN
+          </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+
+</html>
